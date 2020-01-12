@@ -1,14 +1,198 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="css.css">
-<title>Page Title</title>
-</head>
-<body>
-<script src="javascript.js"></script>
+ <head>
+ <link rel="stylesheet" type="text/css" href="css.css">
+  <title>Home</title>
+ <style>
+ h1{
+ font-size:55px;
+ text-align:center;
+ color:#618685;
+ text-shadow: 2px 2px 2px #112d00;
+ }
+ 
+ h2{
+ font-size:40px;
+ text-align:center;
+ color:#fefbd8;
+ text-shadow: 2px 2px 2px #618685;
+ }
+ 
+ body {
+  background-color: #d5f4e6;
+}
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+a{
+color:#112d00;
+text-decoration:none;
+font-size:20px;
+}
 
+a:hover:not(.active){
+color:#fefbd8;
+text-shadow: 1px 1px 1px #618685;
+transition-duration:0.3s;
+}
+
+ ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b1cbbb;
+  position:sticky;
+  top:0;
+  text-shadow: 1px 1px 1px #618685;
+ }
+ 
+ li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #618685;
+  transition-duration: 0.5s;
+}
+
+.active {
+  background-color: #112d00;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+#logindiv{
+ position: relative;
+ right: 15px;
+ text-align:right;
+}
+
+p{
+text-align:center;
+}
+
+
+
+
+
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+div{
+color:white;
+text-align:center;
+padding:40px;
+}
+
+img{
+height:250px;
+width:350px;
+border-radius:10px;
+}
+ </style>
+ </head>
+ 
+ <body>
+ <script src="javascript.js"></script>
+ <div id="logindiv">
+ <a href="#log in">Log In</a>
+ </div>
+ <h1>Energy from Water and Air</h1>
+ <ul>
+ <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#menu">News</a></li>
+  <li><a href="#delivery">neshto si</a></li>
+  <li><a href="contact.html">neshto si</a></li>
+  <li><a href="map.html">neshto si</a></li>
+ </ul>
+ <h2>Home</h2>
+ <p>Welcome to our new website! Here you can find the latest news and information considering energy gained from water and air.
+ <hr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="flex-container">
+<div style="background-color:#1C0808; border-radius:10px; margin-right:40px">
+<b><p style="font-size:30px; text-shadow:2px 2px 2px black">Hawaiian</p></b>
+<img src="https://res.cloudinary.com/droz/image/upload/v1558317957/prod-store/gallery/slides/Hawaiian-pizza-pie-pineapple-720.jpg" alt="Hawaiian"><br>
+<div style="background-color:#840F0F; border-radius:10px; padding:15px">
+<b>Price:</b> 14.99$<br>
+<b>Ingredients:</b> Pineapple, Ham, Bell Pepper
+</div>
+</div>
+<div style="background-color:#1C0808; border-radius:10px;margin-right:40px">
+<b><p style="font-size:30px; text-shadow:2px 2px 2px black">Margherita</p></b>
+<img src="https://orgianos.com/uploads/images/img9l.jpg" alt="Quattro Formaggi"><br>
+<div style="background-color:#840F0F; border-radius:10px; padding:15px">
+<b>Price:</b> 16.99$<br>
+<b>Ingredients:</b> Bufala Mozzarella, <br>Cherry Tomato, Basil, Oregano
+</div>
+</div>
+<div style="background-color:#1C0808; border-radius:10px">
+<b><p style="font-size:30px; text-shadow:2px 2px 2px black">Quattro Formaggi</p></b>
+<img src="https://thumbs.dreamstime.com/b/pizza-quattro-formaggi-121077346.jpg" alt="Neapolitan"><br>
+<div style="background-color:#840F0F; border-radius:10px; padding:15px">
+<b>Price:</b> 17.99$<br>
+<b>Ingredients:</b> Mozzarella, Taleggio, Scamorza, <br>Gorgonzola
+</div>
+</div>
+</div>
+
+
+
+<div class="flex-container" >
+<div style="background-color:#1C0808; border-radius:10px; margin-right:40px">
+<b><p style="font-size:30px; text-shadow:2px 2px 2px black">Frutti Di Mare</p></b>
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/12/53/1d/86/pizza-frutti-di-mare.jpg" alt="Hawaiian"><br>
+<div style="background-color:#840F0F; border-radius:10px; padding:15px">
+<b>Price:</b> 25.99$<br>
+<b>Ingredients:</b> Squid, Prawn, Venus Clam, <br>Oregano
+</div>
+</div>
+<div style="background-color:#1C0808; border-radius:10px; margin-right:40px">
+<b><p style="font-size:30px; text-shadow:2px 2px 2px black">Diavola</p></b>
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/13/d7/e2/cc/pizza-diavola.jpg" alt="Quattro Formaggi"><br>
+<div style="background-color:#840F0F; border-radius:10px; padding:15px">
+<b>Price:</b> 15.99$<br>
+<b>Ingredients:</b> Pepperoni, Red Chilli
+</div>
+</div>
+<div style="background-color:#1C0808; border-radius:10px">
+<b><p style="font-size:30px; text-shadow:2px 2px 2px black">Funghi</p></b>
+<img src="http://frescospizza.com/wp-content/uploads/2016/10/WhatsApp-Image-2018-10-08-at-1.06.19-AM.jpeg" alt="Neapolitan"><br>
+<div style="background-color:#840F0F; border-radius:10px; padding:15px">
+<b>Price:</b> 19.99$<br>
+<b>Ingredients:</b> Button, Shimeji, Shitake, Porcini
+</div>
+</div>
+</div>
 </body>
+ </body>
 </html>
