@@ -165,7 +165,33 @@ h1{
 }
 
 
+h1{
+    font-size:55px;
+    font-size:60px;
+    text-align:center;
+    color:#618685;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+@@ -101,7 +101,6 @@ h1{
+   img{
+   height:250px;
+   width:350px;
+   border-radius:10px;
+   }
 
+
+@@ -143,4 +142,13 @@ h1{
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.div{
+transition:1s;
+}
+
+.div:hover{
+box-shadow:2px 2px 10px 10px rgb(227, 248, 238);
+transform:scale(1.2);
 .imagekvo
 {
 	width:100%;
