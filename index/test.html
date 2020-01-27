@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Колко eco-friendly сте?</title>
+    <link href = "test css.css" rel = "stylesheet" type = "text/css">
+    <link href = "https://fonts.googleapis.com/css?family=Loto" rel = "stylesheet">
+    <script src = "test js.js"></script>
+
+  </head>
+
+  <body>
+
+  
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Начална страница</a>
+  <a href="articles.html">Статии</a>
+  <a href="Game.html">Игра</a>
+  <a href="Test.html">Тест</a>
+   <a href="log_in.html">Log in</a>
+  <a href="sign_in.html">Sign in</a>
+</div>
+
+<button class="openbtn" onclick="openNav()">☰</button>  
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+
+    <center><h1>Колко eco-friendly сте?</h1></center>
+
+    <center><div style="height:300px;width:50%; color:white;padding:40px">
+
+    <form id="quiz" name= "quiz">
+
+
+
+<center><p>Рециклирате ли?</p></center>
+
+
+
+<center><input type="radio" id="mc" name = "question1" value = "Always">Винаги<br></center>
+
+<center><input type="radio" id="mc" name = "question1" value = "Sometimes">Понякога<br></center>
+
+<center><input type="radio" id="mc" name = "question1" value = "Never">Никога<br></center>
+<center><input type="radio" id="mc" name = "question1" value = "I do recycle some stuff when I remember">Рециклирам някои неща, когато се сетя<br></center>
+
+<!--2--><center><p>Опитвате ли се да намаляте вашия брой отпадъци всеки ден?</p></center>
+<center><input type="radio" id="mc" name= "question2" value= "Always I hate taking out the trash">Винаги, мразя да изхвърлям боклука<br></center>
+<center><input type="radio" id="mc" name = "question2" value = "Sometimes when I have the energy">Понякога, когато имам енергия<br></center>
+<center><input type="radio" id="mc" name = "question2" value = "Never, I only do what is most convenient for me">Никога, аз само правя това, което е удобно за мен<br></center>
+<center><input type="radio" id="mc" name = "question2" value = "No, but I buy recycled stuff anyway">Не, но купувам рециклирани неща<br></center>
+
+<!--3--><center><p>Бихте ли купили електрическа кола?</p></center>
+
+<center><input type="radio" id="mc" name = "question3" value = "Yes, my next car will be electric">Да, следващата ми кола ще бъде електрическа<br></center>
+<center><input type="radio" id="mc" name = "question3" value = "Maybe, if I had the money or if they were big enough to hold my family">Може би, ако имах парите или ако е достатъчно голяма, за да побере цялото ми семейство<br></center>
+<center><input type="radio" id="mc" name = "question3" value = "No, they look funny">Не, те изглеждат странно.<br></center>
+<center><input type="radio" id="mc" name = "question3" value = "I drive one now and I love it">Карам една в момента и ми харесва<br></center>
+
+
+
+<!--4--><center><p> Изключвате ли лампите като излизате от дома ви?</p></center>
+<center><input type="radio" id="mc" name = "question4" value = "Always2">Винаги<br></center>
+<center><input type="radio" id="mc" name = "question4" value = "Sometimes2">Понякога<br></center>
+<center><input type="radio" id="mc" name = "question4" value = "Never2">Никога<br></center>
+<center><input type="radio" id="mc" name = "question4" value = "No, my fish is scared of the dark">Не, рибата ми се страхува от тъмното<br></center>
+
+
+
+<center><p>Колко литри ви харчи автомобила за 100км?</p></center>
+
+<center><input type="radio" id="mc" name = "question5" value = "40+">7-<br></center>
+<center><input type="radio" id="mc" name = "question5" value = "Between 30-40">Около 7-9<br></center>
+<center><input type="radio" id="mc" name = "question5" value = "-30">9+<br></center>
+<center><input type="radio" id="mc" name = "question5" value = "Vehicles pollute too much so I don't use them">Автомобилите замърсяват прекалено много, за това не ги използвам<br></center>
+
+<center><p>Купувате ли органична храна?</p></center>
+
+<center><input type="radio" id="mc" name = "question6" value = "Always3">Винаги<br></center>
+<center><input type="radio" id="mc" name = "question6" value = "Sometimes3">Понякога<br></center>
+<center><input type="radio" id="mc" name = "question6" value = "Never3">Никога<br></center>
+<center><input type="radio" id="mc" name = "question6" value = "My mom buys all my food for me">Майка ми купува всичката храна за мен<br></center>
+
+
+
+<!--7--><center><p>Имате ли компактни флуоресцентни крушки във вашата къща?</p></center>
+<center><input type="radio" id="mc" name = "question7" value = "Yes">Да<br></center>
+<center><input type="radio" id="mc" name = "question7" value = "No">Не<br></center>
+<center><input type="radio" id="mc" name = "question7" value = "What are they?">Какво е това?<br></center>
+
+
+
+<!--8--><center><p>Оставяте ли зарядното на телефона ви включено в контакта дори когато не зареждате телефона ви?</p></center>
+<center><input type="radio" id="mc" name = "question8" value = "Yes">Да<br></center>
+<center><input type="radio" id="mc" name = "question8" value = "No">Не<br></center>
+<center><input type="radio" id="mc" name = "question8" value = "Does it matter">Има ли значение?<br></center>
+
+
+
+<!--9--><center><p>Пиете ли ботилирана вода?</p>
+
+<center><input type="radio" id="mc" name = "question9" value = "Everday">Всеки ден<br></center>
+<center><input type="radio" id="mc" name = "question9" value = "Sometimes4">Понякога<br></center>
+<center><input type="radio" id="mc" name = "question9" value = "Never">Никога<br></center>
+
+
+
+<!--11--><center><p>Какво правите с дрехите, които не носите повече?</p></center>
+
+<center><input type="radio" id="mc" name = "question11" value = "Throw them away">Изхвърлям ги<br></center>
+<center><input type="radio" id="mc" name = "question11" value = "Sell them">Продавам ги<br></center>
+<center><input type="radio" id="mc" name = "question11" value = "Donate/give them away">Дарявам ги/подарявам ги<br></center>
+<center><input type="radio" id="mc" name = "question11" value = "I cut them up and make a quilt">Правя си юрган от тях<br></center>
+
+
+
+<!--12--><center><p>Когато правите барбекю, от какво ядете?</p></center>
+
+<center><input type="radio" id="mc" name = "question12" value = "Paper plates and plastic cups">Хартиени чинии и пластмасови чаши<br></center>
+<center><input type="radio" id="mc" name = "question12" value = "Styrofoam plates and cups">Чинии и чаши от стиропор<br></center>
+<center><input type="radio" id="mc" name = "question12" value = "Dishes from inside the house that I will wash later">Съдове от вкъщи, които ще измия после<br></center>
+<center><input type="radio" id="mc" name = "question12" value = "Bio-degradable plates, cups, eating utensils, and napkins">Биоразградими плочи, чаши, прибори за хранене и салфетки<br></center>
+
+
+
+<!--13--><center><p>Какво правите с използваните батерии?</p></center>
+
+<center><input type="radio" id="mc" name = "question13" value = "I use rechargable batteries">Използвам акумулаторни батерии<br></center>
+<center><input type="radio" id="mc" name = "question13" value = "I throw them away">Изхвърлям ги<br></center>
+<center><input type="radio" id="mc" name = "question13" value = "I put them in the freezer">Слагам ги във фризера<br></center>
+<center><input type="radio" id="mc" name = "question13" value = "I save them for my used battery collection">Запазвам ги за моята колекция от използвани батерии<br></center>
+
+
+
+<!--14--><center><p>Какво използвате за да носите вашите покупки?</p></center>
+
+<center><input type="radio" id="mc" name = "question14" value = "Paper bags">Хартиени торбички<br></center>
+<center><input type="radio" id="mc" name = "question14" value = "Plastic bag">Пластмасови торбички<br></center>
+<center><input type="radio" id="mc" name = "question14" value = "Paper or plastic that I recycle after">Хартиени или пластмасови торбички, които рециклирам после<br></center>
+<center><input type="radio" id="mc" name = "question14" value = "Re-usable canvas bags">Пакетни чанти за повторно използване<br></center>
+
+
+
+<!--15--><center><p>Абонирате ли се за извлечения от електронни банки?</p></center>
+<center><input type="radio" id="mc" name = "question15" value = "Yes">Да<br></center>
+<center><input type="radio" id="mc" name = "question15" value = "No">Не<br></center>
+<center><input type="radio" id="mc" name = "question15" value = "I can do that?">Мога да правя това?<br></center>
+
+
+
+<!--16--><center><p>Вашият дом оборудван ли е с водохранителни кранове?</p></center>
+<center><input type="radio" id="mc" name = "question16" value = "Yes">Да<br></center>
+<center><input type="radio" id="mc" name = "question16" value = "Some are">Някои са<br></center>
+<center><input type="radio" id="mc" name = "question16" value = "No">Не<br></center>
+
+
+
+<!--17--><center><p>Изключвате ли водата, докато си миете зъбите, бръснете и т.н.?</p></center>
+<center><input type="radio" id="mc" name = "question17" value = "Yes">Да<br></center>
+<center><input type="radio" id="mc" name = "question17" value = "No">Не<br></center>
+<center><input type="radio" id="mc" name = "question17" value = "Sometimes">Понякога<br></center>
+<center><input type="radio" id="mc" name = "question17" value = "I keep it on so the rubber ducky can spash around">Задържам го, така че гуменото пате да може да си плува<br></center>
+
+
+
+<!--18<p>How often do you shop from Metro/Kaufland?</p>
+
+<input type="radio" id="mc" name = "question18" value = "I go there for all my needs">I go there for all my needs<br>
+
+<input type="radio" id="mc" name = "question18" value = "I go there only for certain things">I go there only for certain things<br>
+
+<input type="radio" id="mc" name = "question18" value = "I never shop there">I never shop there<br>
+
+<input type="radio" id="mc" name = "question18" value = "I go there for fun when I'm bored">I go there for fun when I'm bored<br>-->
+
+
+
+<!--19--><center><p>Купувате ли пресни плодове и зеленчуци?</p>
+
+<center><input type="radio" id="mc" name = "question19" value = "Yes">Да<br></center>
+<center><input type="radio" id="mc" name = "question19" value = "Yes and they must be organic">Да и трябва да са органични<br></center>
+<center><input type="radio" id="mc" name = "question19" value = "Sometimes and I also buy canned and frozen">Понякога, също и купувам консерви и замразени<br></center>
+<center><input type="radio" id="mc" name = "question19" value = "I only buy canned and frozen">Купувам само консервирани и замразени<br></center>
+<center><input type="radio" id="mc" name = "question19" value = "Who eats vegetables?">Кой яде зеленчуци?<br></center>
+
+
+
+<!--20--><center><p>Купувате ли вестници?</p>
+
+<center><input type="radio" id="mc" name = "question20" value = "Yes every week and I recycle them">Да, всяка седмица и ги рециклирам<br></center>
+<center><input type="radio" id="mc" name = "question20" value = "No I read my news online">Не, чета си новините онлайн<br></center>
+<center><input type="radio" id="mc" name = "question20" value = "Yes every week">Да всяка седмица<br></center>
+<center><input type="radio" id="mc" name = "question20" value = "No I don't care about the news">Не, не ме интересува за новините<br></center>
+
+
+
+<!--21--><center><p>Имам бутилка за повторно използване...</p>
+
+<center><input type="radio" id="mc" name = "question21" value = "And I use it every single day">...и я използвам всеки ден<br></center>
+<center><input type="radio" id="mc" name = "question21" value = "And I try to use it all the time, but sometimes I forget">...и я използвам често, но понякога забравям<br></center>
+<center><input type="radio" id="mc" name = "question21" value = "I don't have one because I hate washing them">Нямам такава, защото мразя да я мия<br></center>
+
+
+
+<!--22--><center><p>Когато си чистя банята използвам...</p>
+
+<center><input type="radio" id="mc" name = "question22" value = "All natural cleaning products from the store">...всички естествени почистващи продукти от магазина</center><br>
+<center><input type="radio" id="mc" name = "question22" value = "I make my own all natural cleaning products">...естествени продукти за почистване, които аз сам съм си направил</center><br>
+<center><input type="radio" id="mc" name = "question22" value = "Whatever will make me high while scrubbing the tub">...каквото ми попадне<br></center>
+
+<!--23<p>Where is the first place you would go when you need new clothes?</p>
+
+<input type="radio" id="mc" name = "question23" value = "Mall">Mall<br>
+
+<input type="radio" id="mc" name = "question23" value = "Salvation Army">Salvation Army<br>
+
+<input type="radio" id="mc" name = "question23" value = "My sister/brothers closet">My sister/brothers closet<br>
+
+<input type="radio" id="mc" name = "question23" value = "I make my own clothes">I make my own clothes<br>-->
+
+
+
+<!--24<p>Do you have appliances (fridge, stove, washer, dryer) in your house over 10 years old?</p>
+
+<input type="radio" id="mc" name = "question24" value = "Yes I love antiques">Yes I love antiques<br>
+
+<input type="radio" id="mc" name = "question24" value = "Some are old and some are new">Some are old and some are new<br>
+
+<input type="radio" id="mc" name = "question24" value = "No everything is new and Energy Star Qualified">No everything is new and Energy Star Qualified<br>
+
+<input type="radio" id="mc" name = "question24" value = "I make a fire to cook my food">I make a fire to cook my food<br>-->
+
+
+
+<!--25<p>How often do you eat at fast food establishments?</p>
+
+<input type="radio" id="mc" name = "question25" value = "Everyday">Everyday<br>
+
+<input type="radio" id="mc" name = "question25" value = "2-3 times a week">2-3 times a week<br>
+
+<input type="radio" id="mc" name = "question25" value = "1-2 times a week">1-2 times a week<br>
+
+<input type="radio" id="mc" name = "question25" value = "Never">Never<br>-->
+<br>
+<input id="button" type = "button" value = "Готов съм!" onclick = "check();">
+</form>
+
+<div id="after_submit">
+<p id = "message"></p>
+<p id="number_correct"></p>
+</div>
+</body>
+</html>
