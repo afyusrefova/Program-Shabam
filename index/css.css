@@ -187,3 +187,13 @@
 	width:100%;
 	height:30%;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollbutton{
+	height:40px;
+  width:40px;
+}
