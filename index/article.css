@@ -50,6 +50,7 @@
     font-size: 35px;
     color: white;
   }
+
  
   /* Container for flexboxes */
   section {
@@ -69,6 +70,8 @@
     flex: 3;
     background-color: white;
     padding: 45px;
+    padding-left:90px;
+    padding-right:90px;
   }
   
   .article-image{
