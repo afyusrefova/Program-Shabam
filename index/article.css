@@ -4,7 +4,7 @@
   }
  
   body {
-    font-family: century-supra-text;
+  font-family: century-supra-text;
 	font-variant-numeric: oldstyle-nums;
    }
  
@@ -132,18 +132,19 @@
      color:white;
      text-shadow: 1px 1px 1px #618685;
      transition-duration:0.3s;
-	 text-decoration:underline;
+	   text-decoration:underline;
      }
      
-      ul{
-       width:100%;
-       list-style-type: none;
-       margin: 0px;
-       padding: 0px;
-       overflow: hidden;
-       background-color: #b8c8d0;
-       text-shadow: 1px 1px 1px #618685;
-       position:relative;
+    ul{
+     width:100%;
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+     overflow: hidden;
+     background-color: #b8c8d0;
+     text-shadow: 1px 1px 1px #618685;
+     box-shadow: 0px 0px 10px 1px #082828;
+     position:relative;
 	   position:sticky;
 	   top:0;
 	   z-index:1;
