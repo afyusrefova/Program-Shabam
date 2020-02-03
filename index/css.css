@@ -1,8 +1,12 @@
-    
+html {
+  scroll-behavior: smooth;
+}
+
     body {
       overflow-x: hidden;
       font-family: century-supra-text;
       font-variant-numeric: oldstyle-nums;
+      background-color: #b8c8d0;
     }
     
     h1{
@@ -26,7 +30,7 @@
    }
    
    a{
-   color:#112d00;
+   color:white;
    text-decoration:none;
    font-size:20px;
    }
@@ -39,17 +43,15 @@
    }
    
     ul{
+     margin-top:20px;
 		 width:100%;
      list-style-type: none;
-     margin: 0px;
      padding: 0px;
      overflow: hidden;
      background-color: #b8c8d0;
      text-shadow: 1px 1px 1px #618685;
      box-shadow: 0px 0px 10px 1px #082828;
      position:relative;
-     position:sticky;
-     top:0px;
      z-index:1;
 	   box-shadow:0px 0px 7px 1px #205058;
     }
@@ -75,16 +77,13 @@
     background-color: #082828;
   }
 
-
-
    .section
    {
      position: relative;
      width: 100%;
-     height: 100vh;
-    
-    
+     height: 100vh;    
    }
+
   .video-background
   {
     position: absolute;
@@ -102,20 +101,10 @@
      justify-content: center;
    }
    
-   #logindiv{
-    position: relative;
-    right: 15px;
-    text-align:right;
-   }
-   
    p{
-   text-align:center;
-   }
-   
-   
-   .flex-container {
-     display: flex;
-     justify-content: center;
+    font-size:20px;
+    line-height:1.6;
+    text-align:center;
    }
    
    div{
@@ -129,26 +118,16 @@
    height:250px;
    width:100%;
    }
-   
-   
-.container2 {
-  position: relative;
-  width: 100%;
-  height:auto;
-}
 
 .container {
   position: relative;
   width: 40%;
   transition:1s;
-  margin-top:40px;
-  margin-right:40px;
-  margin-left:40px;
-  margin-bottom:40px;
+  margin:2%;
 }
 
 .container:hover{
-  transform:scale(1.1);
+  transform:scale(1.1,1.1);
 }
 
 .overlay {
@@ -161,7 +140,7 @@
   width: 100%;
   opacity: 0;
   transition: .8s ease;
-  background-color: #008CBA;
+  background-color:#7098a0;
 }
 
 .container:hover .overlay {
@@ -178,17 +157,12 @@
   text-align: center;
 }
 
-
 .centered {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height:70%;
-}
-
-html {
-  scroll-behavior: smooth;
+  height:80%;
 }
 
 .scrollbutton{
