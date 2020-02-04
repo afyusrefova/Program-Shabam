@@ -7,23 +7,27 @@
 
  </head>
  
- <body style="color:#66ffff;">
+ <body>
+
+	<header>
+		<h1>Energy from Water and Air</h1>
+	  </header>
 
 
     
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a  href="#news">News</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#aboutus">About us</a></li>
+        <li><a  href="index.html#section2">News</a></li>
+        <li><a href="aboutus.html">About us</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="test.html">Test</a></li>
-        <li><a class="active" href="#calculators">Calculator</a></li>
+        <li><a class="active" href="#calculators.html">Calculator</a></li>
        </ul>
   
-<h3>HYDRO RESSOURCES</h3>
 
 
+<div class="container"><h3>HYDRO RESSOURCES</h3>
+	<div class="content">
 <form oninput="l.value=parseInt(m3.value)*1000;losses.value=parseInt(m3.value*waterfall.value*density.value)*9.81/1000">
 Flow rate : 
 <input id="m3" value="1" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
@@ -49,10 +53,16 @@ Maximal power before losses :
 
 <br>
 </form>
+</div>
+</div>
 
 
-<h3>LOSSES AND REAL ELECTICAL POWER</h3>
 
+
+
+
+<div class="container"><h3>LOSSES AND REAL ELECTICAL POWER</h3>
+<div class="content">
 
 <form oninput="global_efficiency.value=parseInt(efficiency_turbine.value*drop_factor.value*other_losses.value); active_power_hydro.value=parseInt(losses.value*efficiency_turbine.value*drop_factor.value*other_losses.value); apparent_power.value=parseInt(active_power_hydro.value*cosphi.value);">
 Efficiency of turbine 
@@ -89,10 +99,17 @@ Real apparent power available (in kVA) :
 	<br>
 	<br>
 
-</form>
+</form></div></div>
 
 
- <h3>ENERGY PRODUCTION AND FINANCIAL GAIN </h3>
+
+
+
+
+
+
+ <div class="container"><h3>ENERGY PRODUCTION AND FINANCIAL GAIN </h3>
+	<div class="content">
 
 <form oninput="hydro_energy_kwh.value=parseInt(hydro_working_day.value)*2976; hydro_energy_mwh.value=parseInt(hydro_energy_kwh.value)/1000; electricity_bill.value=parseInt(cost_hydro_energy.value*hydro_energy_kwh.value);">
 
@@ -121,7 +138,6 @@ Total annual amount of electricity bill :
 <input class="finalresult" name="electricity_bill" id="electricity_bill" for="hydro_energy_kwh; cost_hydro_energy" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
 		€/year
 	<br>
-	</form>	
+	</form>	</div></div>
 
-</bodystyle="color:#66ffff; background-image:url(https://images.unsplash.com/photo-1562070821-fe899ee38663?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80.jpg)">
 </html>
