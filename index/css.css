@@ -6,7 +6,14 @@ html {
       overflow-x: hidden;
       font-family: century-supra-text;
       font-variant-numeric: oldstyle-nums;
-      background-color: #b8c8d0;
+      background-color: white;
+    }
+
+    footer {
+      background-color: #205058;
+      text-align: center;
+      color: white;
+      padding:20px;
     }
     
     h1{
@@ -43,7 +50,6 @@ html {
    }
    
     ul{
-     margin-top:20px;
 		 width:100%;
      list-style-type: none;
      padding: 0px;
@@ -117,20 +123,25 @@ html {
    img{
    height:250px;
    width:100%;
+   border-radius:30px;
    }
+
 
 .container {
   position: relative;
   width: 40%;
   transition:1s;
   margin:2%;
+  border-radius:30px;
+  box-shadow:0px 0px 10px black;
 }
 
 .container:hover{
-  transform:scale(1.1,1.1);
+  transform:scale(1.05,1.05);
 }
 
-.overlay {
+.overlay-gradient{
+  border-radius:30px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -138,6 +149,18 @@ html {
   right: 0;
   height: 100%;
   width: 100%;
+  background: linear-gradient(0deg, #103840 22%, rgba(0,0,0,0) 71%);
+}
+
+.overlay {
+  border-radius:30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 91%;
+  width: 94%;
   opacity: 0;
   transition: .8s ease;
   background-color:#7098a0;
@@ -145,6 +168,7 @@ html {
 
 .container:hover .overlay {
   opacity: 1;
+  text-decoration:underline;
 }
 
 .text {
@@ -159,10 +183,13 @@ html {
 
 .centered {
   position: absolute;
-  top: 60%;
+  top: 56%;
+  bottom:56%;
   left: 50%;
   transform: translate(-50%, -50%);
   height:80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .scrollbutton{

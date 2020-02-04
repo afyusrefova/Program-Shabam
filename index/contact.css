@@ -2,12 +2,17 @@
     box-sizing: border-box;
     margin: 0;
   }
+
+  html { 
+    background: url(https://images.unsplash.com/photo-1500644673162-815d63079d38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80) no-repeat center center fixed; 
+    background-size: cover;
+  }
  
   body {
-  font-family: century-supra-text;
-	font-variant-numeric: oldstyle-nums;
+    font-family: century-supra-text;
+    font-variant-numeric: oldstyle-nums;
    }
- 
+
   p{
     margin-top:20px;
     font-size:18.5px;
@@ -54,75 +59,22 @@
  
   /* Style the header */
   header {
-	  display:flex;
+    background-image: url("https://images.unsplash.com/photo-1500644673162-815d63079d38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:flex;
     align-items: center;
     justify-content: center;
-	  overflow: hidden;
-    background-color: #205058;
+	overflow: hidden;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
-    background-image: url("https://images.unsplash.com/photo-1500644673162-815d63079d38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
+
  
-  /* Container for flexboxes */
-  section {
-    display: flex;
-  }
- 
-  /* Style the navigation menu */
-  nav {
-    flex: 0.8;
-    background: #98b0b8;
-    padding: 20px;
-  }
- 
- 
-  /* Style the content */
-  article {
-    flex: 3;
-    background-color: white;
-    background: linear-gradient(to left, #e4f1ee 0%,#ffffff 20%,#ffffff 50%,#ffffff 80%,#e4f1ee 100%);
-    padding: 45px;
-    padding-left:90px;
-    padding-right:90px;
-  }
-  
-  .article-image{
-	  box-shadow:0px 0px 7px 1px grey;
-  }
- 
-  /* Style the footer */
-  footer {
-      position:absolute;
-      bottom:0;
-      width:100%;
-    background-color: #205058;
-    text-align: center;
-    color: white;
-    padding:20px;
-  }
- 
-  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    section {
-      flex-direction: column;
-    }
-  }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  
  
   a{
@@ -227,11 +179,23 @@
   
 
   .contact{
-    position: absolute;
-    margin-top: 20%;
-    margin-bottom:20%;
-    margin-left: 25%;
-      width:650px;
-      height:400px;
-      background-color:yellow;
+    border: 3px solid #f1f1f1;
+    background-color:rgb(119,136,153,0.7);
+    border-radius:25px;
+    width:650px;
+    height:450px;
+    color:white;
+    padding:3%;
+    position:relative;
+    left:0; 
+    right:0;
+    top:0; 
+    bottom:0;
+    margin:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    /*this to solve "the content will not be cut when the window is smaller than the content": */
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
   }
