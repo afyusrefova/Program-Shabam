@@ -62,21 +62,16 @@
     background-image: url("https://images.unsplash.com/photo-1500644673162-815d63079d38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-	display:flex;
+	  display:flex;
     align-items: center;
     justify-content: center;
-	overflow: hidden;
+	  overflow: hidden;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
   }
 
-
- 
-
- 
- 
   a{
 	  color:white;
      text-decoration:none;
@@ -126,14 +121,7 @@
      .active {
        background-color: #082828;
      }
-     
-     
-     
-     
-     
-     
-     
-     
+       
    .flex-container
    {
    display:flex;
@@ -144,11 +132,11 @@
     width: 80%;
     height:200px;
     margin:10%;
-	margin-bottom:10px;
+	  margin-bottom:10px;
     text-align: center;
     font-size: 30px;
-	transition:1s;
-	position: relative;
+	  transition:1s;
+	  position: relative;
   }
   
   .flex-container > div:hover{
@@ -193,6 +181,7 @@
     margin:auto;
     margin-top:5%;
     margin-bottom:5%;
+    
     /*this to solve "the content will not be cut when the window is smaller than the content": */
     max-width:100%;
     max-height:100%;

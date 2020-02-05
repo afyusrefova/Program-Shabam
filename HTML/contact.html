@@ -31,10 +31,20 @@
 <div class="row">
   <div style="margin-left:25%" class="column">
     <form action="/action_page.php">
+
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
       <label for="lname">Last Name</label>
       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="type">Type</label>
+      <select id="type" name="type">
+        <option value="question">Question</option>
+        <option value="general feedback">General Feedback</option>
+        <option value="suggestion">Suggestion</option>
+      </select>
+
       <label for="country">Country</label>
       <select id="country" name="country">
         <option value="bulgaria">Bulgaria</option>
@@ -43,6 +53,7 @@
         <option value="france">France</option>
         <option value="germany">Germany</option>
       </select>
+      
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
       <input style="margin-left:25%; border-radius:20%; margin-top:7%" type="submit" value="Submit">
