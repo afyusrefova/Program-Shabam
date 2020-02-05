@@ -7,7 +7,7 @@
 body {
   font-family: century-supra-text;
   font-variant-numeric: oldstyle-nums;
-  background: linear-gradient(to left, #e4f1ee 0%,#ffffff 35%,#ffffff 50%,#ffffff 65%,#e4f1ee 100%);
+  background-image: url(../Images/background_behind_test.jpg)
 }
 
 p{
@@ -32,7 +32,7 @@ p{
     text-align: center;
     font-size: 35px;
     color: white;
-    background-image: url("https://images.unsplash.com/photo-1500644673162-815d63079d38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+    background-image: url("../Images/background_test.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
