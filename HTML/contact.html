@@ -26,10 +26,35 @@
 
 <div class="contact">
 <h2>Contact</h2>
-<h4>Hi!</h4>
-<p>We hope you've liked our website so far! If you have any feedback, suggestions, questions or perhaps complaints concerning the site, please feel free to share your thoughts with us via the shown below e-mails:</p>
 
+
+<div class="row">
+  <div class="column">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="bulgaria">Bulgaria</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="france">France</option>
+        <option value="germany">Germany</option>
+      </select>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </div>
+</div>
+</div>
+
+<footer>
+  <p style="margin-top:0px; text-align:center"> <a href=aboutus.html><span>About us</span></a> <span style="margin-left:30px; margin-right:30px">|</span> <a href=contact.html><span>Contact</span></a> </p style="margin-top:0px; text-align:center">
+  </footer>
 
 </body>
 </html>
