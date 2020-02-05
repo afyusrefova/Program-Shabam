@@ -3,8 +3,8 @@
  <head>
  
     <link rel="stylesheet" type="text/css" href="../CSS/calculators.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
+    
+<title>Calculators</title>
  </head>
  
  <body>
@@ -21,7 +21,7 @@
         <li><a href="aboutus.html">About us</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="test.html">Test</a></li>
-        <li><a class="active" href="#calculators.html">Calculator</a></li>
+        <li><a class="active" href="calculators.html">Calculators</a></li>
        </ul>
   
 
@@ -29,29 +29,29 @@
 <div class="container"><h3>HYDRO RESSOURCES</h3>
 	<div class="content">
 <form oninput="l.value=parseInt(m3.value)*1000;losses.value=parseInt(m3.value*waterfall.value*density.value)*9.81/1000">
-Flow rate : 
+<p>Flow rate : 
 <input id="m3" value="1" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
  m3/s
 <input class="finalresult" id="l" for="flow_rate_m3" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
  l/s
- <br>
-Acceleration of gravity 
+ </p>
+<p>Acceleration of gravity :
 <input autocomplete="on" id="gravity" value="9.81" maxlength="20"size="20" onchange=" calculate_hydro()" type="num">
  m/s²
-<br>
-Waterfall height, head : 
+</p>
+<p>Waterfall height, head : 
 <input id="waterfall" value="12" maxlength="20" size="20" onchange=" calculate_hydro()" type="num">
 m
-<br>
-Density : 
+</p>
+<p>Density : 
 <input id="density" value="1000" maxlength="20" size="20" onchange=" calculate_hydro()" type="num">
  kg/m3 (usually 1000 kg/m3 for water)
-<br>
-Maximal power before losses : 
+</p>
+<p>Maximal power before losses : 
 <input class="finalresult" name="losses" id="losses" for="m3;waterfall;density" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
   kVA
 
-<br>
+</p>
 </form>
 </div>
 </div>
@@ -65,39 +65,38 @@ Maximal power before losses :
 <div class="content">
 
 <form oninput="global_efficiency.value=parseInt(efficiency_turbine.value*drop_factor.value*other_losses.value); active_power_hydro.value=parseInt(losses.value*efficiency_turbine.value*drop_factor.value*other_losses.value); apparent_power.value=parseInt(active_power_hydro.value*cosphi.value);">
-Efficiency of turbine 
+<p>Efficiency of turbine 
 <input id="efficiency_turbine" value="1" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
-<br>
+</p>
  
-Pressure drop factor  
+<p>Pressure drop factor  
 <input autocomplete="on" id="drop_factor" value="1" maxlength="20"size="20" onchange=" calculate_hydro()" type="num">
-<br>
+</p>
 
 
-Other losses 
+<p>Other losses 
 <input id="other_losses" value="1" maxlength="20" size="20" onchange=" calculate_hydro()" type="num">
-<br>
+</p>
 
 
-Global Efficiency 
+<p>Global Efficiency 
 <input class="finalresult" name="global_efficiency" id="global_efficiency" for="efficiency_turbine; drop_factor; other_losses" maxlength="20" size="20" onchange=" calculate_hydro()" type="num">
-<br>
+</p>
 
-Real apparent power available (in kVA) : 
-<input class="finalresult" name="active_power_hydro" id="active_power_hydro" for="losses; efficiency_turbine; drop_factor; other_losses" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
-  kVA
-<br>
+<p>Real apparent power available (in kVA) : 
+<input class="finalresult" name="active_power_hydro" id="active_power_hydro" for="losses; efficiency_turbine; drop_factor; other_losses" maxlength="20" size="20" onchange="calculate_hydro()" type="num">kVA
+</p>
 
 
-	Cos phi 
+	<p>Cos phi 
 	<input name="cosphi" id="cosphi" value="1" maxlength="20" size="20" onchange=" calculate_hydro()" type="num">
-	<br>
+	</p>
 	
-	Real active power available (in kW) : 
+	<p>Real active power available (in kW) : 
 	<input class="finalresult" name="apparent_power" id="apparent_power" for="cosphi; active_power_hydro" maxlength="20" size="20" onchange="calculate_hydro()"type="num">
 		kW
-	<br>
-	<br>
+	
+	</p>
 
 </form></div></div>
 
@@ -113,31 +112,36 @@ Real apparent power available (in kVA) :
 
 <form oninput="hydro_energy_kwh.value=parseInt(hydro_working_day.value)*2976; hydro_energy_mwh.value=parseInt(hydro_energy_kwh.value)/1000; electricity_bill.value=parseInt(cost_hydro_energy.value*hydro_energy_kwh.value);">
 
-Average number of working day per year :
+<p>Average number of working day per year :
 <input name="hydro_working_day" id="hydro_working_day" value="150" maxlength="20" size="20" onchange=" calculate_hydro()"type="num">
  days
- <br>
+ </p>
  
-Average annual energy in output of hydro generator :
+<p>Average annual energy in output of hydro generator :
 <br>
 <input class="finalresult" name="hydro_energy_kwh" id="hydro_energy_kwh" for="hydro_working_day" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
  kWh/year
-<br>
+</p>
 
-<input class="finalresult" name="hydro_energy_mwh" id="hydro_energy_mwh" for="hydro_energy_kwh" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
+<p><input class="finalresult" name="hydro_energy_mwh" id="hydro_energy_mwh" for="hydro_energy_kwh" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
 MWh/year
-<br>
+</p>
 
 
-Cost of energy :
+<p>Cost of energy :
 <input name="cost_hydro_energy" id="cost_hydro_energy" maxlength="20" value="1" size="20" onchange=" calculate_hydro()" type="num">
 		€/kWh
-	<br>
+	</p>
 	
-Total annual amount of electricity bill :
+<p>Total annual amount of electricity bill :
 <input class="finalresult" name="electricity_bill" id="electricity_bill" for="hydro_energy_kwh; cost_hydro_energy" maxlength="20" size="20" onchange="calculate_hydro()" type="num">
 		€/year
-	<br>
+	</p>
 	</form>	</div></div>
+
+
+	<footer>
+		<p style="margin-top:0px; text-align:center"> <a href=aboutus.html><span>About us</span></a> <span style="margin-left:30px; margin-right:30px">|</span> <a href=contact.html><span>Contact</span></a> </p style="margin-top:0px; text-align:center">
+	</footer>
 
 </html>

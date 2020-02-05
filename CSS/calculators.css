@@ -1,60 +1,22 @@
-input[type="num"] {
-
-    width: 120px;
-    border-radius: 8px;
-    border: solid 1px #BDBDBD;
-    margin-bottom: 1em;
-    margin-right: 3px;
-    text-align: center;
-}
-input[type="number"] {
-
-    width: 120px;
-    border-radius: 8px;
-    border: solid 1px #BDBDBD;
-    margin-bottom: 1em;
-    margin-right: 3px;
-    text-align: center;
-}
-input.finalresult {
-    background-color: #DEF973;
-    font-weight: strong;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-
-input {
-    color: -internal-light-dark-color(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 0px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
+html { 
+  background: url(https://images.unsplash.com/photo-1500644673162-815d63079d38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80) no-repeat center center fixed; 
+  background-size: cover;
 }
 
 body {
-    background-image:url(https://images.unsplash.com/photo-1500644673162-815d63079d38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
-    background-position: top left, top left;
-    font-size: 13pt;
-    color: #444;
-    font-weight: 300;
-    line-height: 2.25em;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
     font-family: century-supra-text;
 	  font-variant-numeric: oldstyle-nums;
 }
+
+p{
+  font-size:18.5px;
+  line-height:1.6;
+ }
 
 h1{
   font-size:60px;
@@ -76,16 +38,12 @@ header {
   background-size: cover;
 }
 
-image{
-    position: absolute;
-    right:0;
-    bottom:0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index:-1;
 
+footer {
+  background-color: #205058;
+  text-align: center;
+  color: white;
+  padding:20px;
 }
 
 h3{
@@ -149,10 +107,58 @@ a{
      border-radius:30px;
      border: 3px solid #f1f1f1;
      background-color:rgb(119,136,153,0.7);
-     width:350px;
      margin:7%;
+     padding:3%;
+     width:39%;
+     height:30%;
+     margin-left:31%;
    }
 
    .content{
-     margin-left:30%;
+     margin-left:6%;
+     margin-top:5%;
    }
+
+   input[type="num"] {
+
+    width: 120px;
+    border-radius: 8px;
+    border: solid 1px #BDBDBD;
+    margin-bottom: 1em;
+    margin-right: 3px;
+    text-align: center;
+}
+input[type="number"] {
+
+    width: 120px;
+    border-radius: 8px;
+    border: solid 1px #BDBDBD;
+    margin-bottom: 1em;
+    margin-right: 3px;
+    text-align: center;
+}
+input.finalresult {
+    background-color: #DEF973;
+    font-weight: strong;
+}
+
+
+input {
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}

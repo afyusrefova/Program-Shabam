@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Колко eco-friendly сте?</title>
-    <link href = "../CSS/test.css" rel = "stylesheet" type = "text/css">
     <link href = "https://fonts.googleapis.com/css?family=Loto" rel = "stylesheet">
+    <link href = "../CSS/test.css" rel = "stylesheet" type = "text/css">
     <script src = "../JavaScript//test.js"></script>
 
   </head>
@@ -12,18 +12,20 @@
   <body>
 
   
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="index.html">Начална страница</a>
-  <a href="articles.html">Статии</a>
-  <a href="Game.html">Игра</a>
-  <a href="Test.html">Тест</a>
-  <a href="calculators.html">Калколатор</a>
-   <a href="log_in.html">Log in</a>
-  <a href="sign_in.html">Sign in</a>
-</div>
-
-<button class="openbtn" onclick="openNav()">☰</button>  
+    <header>
+      <h1>Energy from Water and Air</h1>
+    </header>
+    
+    
+        <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="index.html#section2">News</a></li>
+         <li><a href="aboutus.html">About us</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a class="active" href="test.html">Test</a></li>
+         <li><a href="calculators.html">Calculators</a></li>
+        </ul>
+    
 
 <script>
 function openNav() {
@@ -259,5 +261,9 @@ function closeNav() {
 <p id = "message"></p>
 <p id="number_correct"></p>
 </div>
+
+<footer>
+  <p style="margin-top:0px; text-align:center"> <a href=aboutus.html><span>About us</span></a> <span style="margin-left:30px; margin-right:30px">|</span> <a href=contact.html><span>Contact</span></a> </p style="margin-top:0px; text-align:center">
+  </footer>
 </body>
 </html>
