@@ -3,11 +3,14 @@
   margin: 0;
 }
 
-
+html { 
+  background: url(../Images/background_behind_test.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
 body {
   font-family: century-supra-text;
   font-variant-numeric: oldstyle-nums;
-  background-image: url(../Images/background_behind_test.jpg)
+  
 }
 
 p{
@@ -20,6 +23,8 @@ p{
  h1{
   font-size:60px;
   letter-spacing:2px;
+  color:white;
+  
   }
 
   header {
