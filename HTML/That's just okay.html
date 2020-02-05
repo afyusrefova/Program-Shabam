@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+    <style media="screen">
+      body{
+		font-family:"Lato", sans-serif;
+        background-image:url('https://images.unsplash.com/photo-1518623001395-125242310d0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1204&q=80');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:cover;
+      }
+      p{
+        font-size: 25px;
+      }
+	  .sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d4f7d4;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #559e54;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+    </style>
+
+    
+    <title>Можеш и по-добре</title>
+
+    </head>
+    <body>
+	  
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Начална страница</a>
+  <a href="articles.html">Статии</a>
+  <a href="Game.html">Игра</a>
+  <a href="Test.html">Тест</a>
+   <a href="log_in.html">Log in</a>
+  <a href="sign_in.html">Sign in</a>
+</div>
+
+<button class="openbtn" onclick="openNav()">☰</button>  
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+    <center><div style="background:rgb(96,96,96,0.5);height:350px;width:50%;color:white;padding:20px; margin: 200px;">
+    <h1>Можеш и по-добре</h1>
+    <p>Вие сте полу-загрижени за Земята и правите добра работа, когато става въпрос за намаляване, повторно използване и рециклиране. Въпреки че правите някои стъпки към по-зелено утре, все още сте в миналото, когато става дума за промяна в голям мащаб. Може би проблемът е вашето превозно средство, което изпуска вредни газове в атмосферата, или пък лош навик да оставяте светлините да светят, докато сте навън, но все още правите неща, които негативно влияят на естествения свят. Не се притеснявайте… все още има време да направите правилното нещо.</p></div>
+    </body>
+    </html>
