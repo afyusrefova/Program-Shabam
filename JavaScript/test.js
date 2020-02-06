@@ -1,5 +1,6 @@
 function check()
 {
+  //inputting the questions
   var question1 = document.quiz.question1.value;
   var question2 = document.quiz.question2.value;
   var question3 = document.quiz.question3.value;
@@ -17,7 +18,7 @@ function check()
   var question15 = document.quiz.question15.value;
   var question16 = document.quiz.question16.value;
     
-    
+    //giving points based on their answer
   var correct = 0;
   //question 1
   if(question1 == "Oil")
@@ -147,7 +148,7 @@ function check()
     {
       window.open("../HTML/Great Job.html")
     }
-  
+  //what happens after the submition
   document.getElementById("after_submit").style.visibility = "visible";
   document.getElementById("message").innerHTML = messages[range];
   document.getElementById("number_correct").innerHTML = "Your score is " + correct;
