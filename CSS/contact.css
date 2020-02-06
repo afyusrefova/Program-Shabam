@@ -145,21 +145,6 @@
   }
   
   
-  .textdiv{
-       position: absolute;
-       left: 0;
-       bottom:0;
-       background-color: rgba(46, 49, 49, 0.7);
-       padding: 3%;
-       color: white;
-       width:100%;
-	     height:30%;
-       font-size:20px;
-       overflow-y:hidden;
-       padding-left:7%;
-       padding-right:7%;
-  }
-  
   .textdiv:hover{
 	  text-decoration:underline;
   }
@@ -167,10 +152,10 @@
   
 
   .contact{
-    border: 3px solid #f1f1f1;
+    border: 15px solid #f1f1f1;
     background-color:rgb(119,136,153,0.7);
     border-radius:25px;
-    width:550px;
+    width:70%;
     color:white;
     padding:3%;
     position:relative;
